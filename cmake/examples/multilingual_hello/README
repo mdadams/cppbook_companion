@@ -1,0 +1,23 @@
+README
+
+This directory contains the source code for the classic hello-world
+program written in several programming languages, including C++, C,
+Fortran, and Java.
+
+    hello.c
+        The source code for the hello-world program written in C.
+    hello.cpp
+        The source code for the hello-world program written in C++.
+    hello.f
+        The source code for the hello-world program written in Fortran.
+    hello.java
+        The source code for the hello-world program written in Java.
+
+The code in this directory can be built using CMake with the CMakeLists
+file provided.
+
+To run the Java program after building (on a Linux-based system), use a
+command like:
+
+    java -cp hello_java.jar hello
+
