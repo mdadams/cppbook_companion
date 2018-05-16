@@ -1,3 +1,4 @@
+#include <foo/other.hpp>
 #include <foo/widget.hpp>
 #include <foo/gadget.hpp>
 
