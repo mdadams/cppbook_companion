@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.11)
 project(libfoo LANGUAGES CXX)
 set(CMAKE_VERBOSE_MAKEFILE true)
 
+# Note: This example is only for explanatory purposes.
+# It is not intended as a normal use of CMake.
+
 option(BUILD_WITH_LIBRARY "Build with a library." false)
 
 if (BUILD_WITH_LIBRARY)
