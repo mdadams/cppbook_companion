@@ -7,4 +7,5 @@ int main()
 	for (auto c : s) {
 		obs.putBits(c, 8);
 	}
+	return 0;
 }

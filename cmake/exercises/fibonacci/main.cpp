@@ -7,4 +7,5 @@ int main()
 	while (std::cin >> i) {
 		std::cout << fibonacci(i) << '\n';
 	}
+	return 0;
 }

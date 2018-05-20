@@ -8,4 +8,5 @@ int main()
 	for (long i = 0; i < 32; ++i) {
 		std::cout << fibonacci(i) << '\n';
 	}
+	return 0;
 }

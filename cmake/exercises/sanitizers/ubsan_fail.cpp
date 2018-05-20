@@ -17,4 +17,5 @@ int i_feel_so_dirty()
 int main()
 {
 	i_feel_so_dirty();
+	return 0;
 }

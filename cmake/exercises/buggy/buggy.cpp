@@ -9,4 +9,5 @@ int main()
 		sum += values[i];
 	}
 	std::cout << sum << '\n';
+	return 0;
 }

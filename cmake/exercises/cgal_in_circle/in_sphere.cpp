@@ -15,4 +15,5 @@ int main()
 	while (std::cin >> a >> b >> c >> d >> q) {
 		std::cout << to_string(side_of_oriented_sphere(a, b, c, d, q)) << '\n';
 	}
+	return 0;
 }

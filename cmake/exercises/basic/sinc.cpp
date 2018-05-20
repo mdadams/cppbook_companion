@@ -7,4 +7,5 @@ int main(int argc, char** argv)
 	while (std::cin >> x) {
 		std::cout << sinc(x) << '\n';
 	}
+	return 0;
 }

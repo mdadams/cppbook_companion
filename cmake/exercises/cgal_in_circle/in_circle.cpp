@@ -14,4 +14,5 @@ int main()
 	while (std::cin >> a >> b >> c >> q) {
 		std::cout << to_string(side_of_oriented_circle(a, b, c, q)) << '\n';
 	}
+	return 0;
 }
