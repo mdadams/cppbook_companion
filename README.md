@@ -1,5 +1,5 @@
-README
-======
+Companion Git Repository for "Lecture Slides for Programming in C++"
+====================================================================
 
 This repository contains some examples and exercises that are associated
 with the following slide deck (which consists of over 2000 slides):
