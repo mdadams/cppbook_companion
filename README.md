@@ -13,4 +13,4 @@ The most recent version of the slide deck is available for download at:
 
 Video lectures covering some of the contents of this slide deck can be
 found at:
-  * https://www.youtube.com/user/iamcanadian1867
+    * https://www.youtube.com/user/iamcanadian1867
