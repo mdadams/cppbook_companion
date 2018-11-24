@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 project(libfoo LANGUAGES CXX)
 set(CMAKE_VERBOSE_MAKEFILE true)
+set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
 # Note: This example is only for explanatory purposes.
 # It is not intended as a normal use of CMake.

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(demo LANGUAGES CXX)
 set(CMAKE_VERBOSE_MAKEFILE true)
 
