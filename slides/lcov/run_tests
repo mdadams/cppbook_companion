@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+BINARY_DIR="$1"
+
+$BINARY_DIR/app
+$BINARY_DIR/app 0
+$BINARY_DIR/app 1
+exit 0
+
