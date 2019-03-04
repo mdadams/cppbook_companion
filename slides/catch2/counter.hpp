@@ -1,5 +1,5 @@
+#include <limits>
 #include <stdexcept>
-#include <numeric>
 
 class counter {
 public:

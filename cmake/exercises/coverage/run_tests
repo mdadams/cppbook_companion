@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+if [ $# -ne 1 ]; then
+	echo "binary directory not specified"
+	exit 1
+fi
+
+bin_dir="$1"
+
+program="$bin_dir/random"
+
+"$program" -n 10
+"$program" -s 0.1

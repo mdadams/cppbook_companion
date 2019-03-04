@@ -1,5 +1,7 @@
 #define CATCH_CONFIG_MAIN
-#include <catch/catch.hpp>
+#include <catch2/catch.hpp>
+#include <cstddef>
+#include <vector>
 
 TEST_CASE("Check resize", "[vector]") {
 	constexpr std::size_t size = 128;
