@@ -8,7 +8,7 @@ if (ENABLE_COVERAGE)
 	set(CMAKE_BUILD_TYPE "Debug" CACHE STRING
 	  "Set the build type." FORCE)
 	include(CodeCoverage.cmake)
-	APPEND_COVERAGE_COMPILER_FLAGS()
+	append_coverage_compiler_flags()
 endif()
 
 add_executable(app app.cpp signum.cpp)

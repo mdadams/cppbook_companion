@@ -1,1 +1,0 @@
-int signum(double x);
