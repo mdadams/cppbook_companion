@@ -5,6 +5,8 @@ option(ENABLE_COVERAGE "Enable coverage" false)
 set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
+find_package(Catch2 REQUIRED)
+
 if (ENABLE_COVERAGE)
 	set(CMAKE_BUILD_TYPE "Debug" CACHE STRING
 	  "Set the build type." FORCE)
@@ -13,6 +15,7 @@ if (ENABLE_COVERAGE)
 endif()
 
 add_executable(test_bqueue test_bqueue.cpp)
+target_link_libraries(test_bqueue Catch2::Catch2)
 
 if (ENABLE_COVERAGE)
 	setup_target_for_coverage_lcov(
