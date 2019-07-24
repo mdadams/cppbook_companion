@@ -18,7 +18,7 @@ void func2(int n) {
 	}
 }
 int main() {
-	std::thread t1([]{func1(1);});
-	std::thread t2([]{func2(1);});
+	std::thread t1([]{func1(10'000);});
+	std::thread t2([]{func2(10'000);});
 	t1.join(); t2.join();
 }
