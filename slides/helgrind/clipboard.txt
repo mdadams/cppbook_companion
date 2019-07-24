@@ -1,0 +1,10 @@
+cmake -S. -Btmp_cmake
+cmake --build tmp_cmake
+
+# Code has data race.
+./tmp_cmake/data_race_1_0
+valgrind --tool=helgrind ./tmp_cmake/data_race_1_0 |& less
+
+# Code is data-race free.
+./tmp_cmake/data_race_1_1
+valgrind --tool=helgrind ./tmp_cmake/data_race_1_1 |& less

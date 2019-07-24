@@ -1,0 +1,27 @@
+Without TSan
+============
+
+cmake -S. -Btmp_cmake
+cmake --build tmp_cmake
+
+tmp_cmake/data_race_2
+tmp_cmake/data_race_1
+tmp_cmake/data_race
+tmp_cmake/deadlock    # Note: May or may not actually deadlock.
+
+With TSan
+=========
+
+CXX=g++ CXXFLAGS="-fsanitize=thread" cmake -S. -Btmp_cmake
+cmake --build tmp_cmake
+
+tmp_cmake/data_race_2
+TSAN_OPTIONS="color=always" tmp_cmake/data_race_2 |& less -r
+
+tmp_cmake/data_race_1
+TSAN_OPTIONS="color=always" tmp_cmake/data_race_1 |& less -r
+
+tmp_cmake/data_race
+
+tmp_cmake/deadlock
+TSAN_OPTIONS="color=always" tmp_cmake/deadlock |& less -r
