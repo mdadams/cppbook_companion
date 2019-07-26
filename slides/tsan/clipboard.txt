@@ -16,7 +16,7 @@ CXX=g++ CXXFLAGS="-fsanitize=thread" cmake -S. -Btmp_cmake
 cmake --build tmp_cmake
 
 tmp_cmake/data_race_2
-TSAN_OPTIONS="color=always" tmp_cmake/data_race_2 |& less -r
+TSAN_OPTIONS="halt_on_error=1 color=always" tmp_cmake/data_race_2 |& less -r
 
 tmp_cmake/data_race_1
 TSAN_OPTIONS="color=always" tmp_cmake/data_race_1 |& less -r
@@ -24,4 +24,4 @@ TSAN_OPTIONS="color=always" tmp_cmake/data_race_1 |& less -r
 tmp_cmake/data_race
 
 tmp_cmake/deadlock
-TSAN_OPTIONS="color=always" tmp_cmake/deadlock |& less -r
+TSAN_OPTIONS="halt_on_error=1 color=always" tmp_cmake/deadlock |& less -r
