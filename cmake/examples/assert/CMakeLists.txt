@@ -8,6 +8,11 @@ project(assert LANGUAGES CXX)
 set(CMAKE_VERBOSE_MAKEFILE true)
 
 # Print the value of several key variables.
+if((DEFINED CMAKE_BUILD_TYPE) AND (NOT CMAKE_BUILD_TYPE STREQUAL ""))
+	message("CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
+else()
+	message("CMAKE_BUILD_TYPE is unset/empty")
+endif()
 message("CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
 message("CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
 message("CMAKE_CXX_FLAGS_DEBUG: ${CMAKE_CXX_FLAGS_DEBUG}")
