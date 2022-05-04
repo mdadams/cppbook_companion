@@ -2,10 +2,7 @@
 
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 
-" Uncomment the following if the leader key is not set.
-" let mapleader=","
-
-" nnoremap <leader>d :YcmDiags GoTo<CR>
+nnoremap <leader>dd :YcmDiags GoTo<CR>
 nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>yg :YcmCompleter GoTo<CR>
 nnoremap <leader>yd :YcmCompleter GoToDeclaration<CR>

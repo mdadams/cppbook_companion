@@ -3,6 +3,9 @@
 " Do not automatically paste text as if in insert mode.
 :set t_BE=
 
+" Uncomment the following line to set the leader key to a comma.
+" let mapleader=","
+
 " Configuration for YCM
 if isdirectory(expand('~/.vim/pack/sde/start/YouCompleteMe'))
 	:execute ':so' expand('~/.vimrc-ycm')
