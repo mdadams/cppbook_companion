@@ -9,11 +9,11 @@ au FileType * setl fo-=cro
 " Configuration for Vim LSP
 let g:system_vimlsp_file = expand('~/.vim/misc/sde/vim-lsp.vim')
 let g:user_vimlsp_file = expand('~/.vimrc-vimlsp')
-if filereadable(g:vimrc_lsp_file)
-	:execute ':so' g:vimrc_lsp_file
+if filereadable(g:system_vimlsp_file)
+	:execute ':so' g:system_vimlsp_file
 	let g:lsp_log_verbose = 1
 	let g:lsp_log_file = expand('~/.vim-lsp.log')
-	if filereadable(g:vimrc_user_lsp_file)
-		:execute ':so' g:vimrc_user_lsp_file
+	if filereadable(g:user_vimlsp_file)
+		:execute ':so' g:user_vimlsp_file
 	endif
 endif
