@@ -1,0 +1,9 @@
+:filetype on
+
+" Do not automatically paste text as if in insert mode.
+:set t_BE=
+
+" Configuration for YCM
+if isdirectory(expand('~/.vim/pack/sde/start/YouCompleteMe'))
+	:execute ':so' expand('~/.vimrc-ycm')
+endif
