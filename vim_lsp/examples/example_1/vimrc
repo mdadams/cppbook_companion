@@ -6,6 +6,9 @@ au FileType * setl fo-=cro
 " Do not automatically paste text as if in insert mode.
 :set t_BE=
 
+" Set the leader key to a comma.
+let mapleader=","
+
 " Configuration for Vim LSP
 let g:system_vimlsp_file = expand('~/.vim/misc/sde/vim-lsp.vim')
 let g:user_vimlsp_file = expand('~/.vimrc-vimlsp')
