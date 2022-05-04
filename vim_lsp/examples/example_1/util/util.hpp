@@ -1,7 +1,7 @@
 #ifndef util_hpp
 #define util_hpp
 
-struct Counter {
+class Counter {
 public:
 	using value_type = int;
 	Counter(value_type value = 0) : value_(value) {}
