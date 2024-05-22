@@ -1,16 +1,15 @@
-#define CATCH_CONFIG_MAIN
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <complex>
 #include "stack.hpp"
 
-TEMPLATE_TEST_CASE("Check default constructor", "[constructors]",
+TEMPLATE_TEST_CASE("Check default constructor", "[stack][constructor]",
   int, double, std::complex<double>) {
 	Stack<TestType> s;
 	CHECK(s.empty());
 	CHECK(s.size() == 0);
 }
 
-TEMPLATE_TEST_CASE("Check push and pop", "[modifiers]",
+TEMPLATE_TEST_CASE("Check push and pop", "[stack][modifier]",
   int, double, std::complex<double>) {
 	std::size_t size = 0;
 	Stack<TestType> s;

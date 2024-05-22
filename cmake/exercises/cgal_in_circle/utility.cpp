@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <CGAL/Cartesian.h>
 
 std::string to_string(CGAL::Oriented_side orient)
@@ -13,4 +14,5 @@ std::string to_string(CGAL::Oriented_side orient)
 		return "on oriented boundary";
 		break;
 	}
+	std::abort();
 }

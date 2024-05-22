@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 project(clang_tidy LANGUAGES CXX)
 
 find_program(CLANG_TIDY_PROGRAM NAMES "clang-tidy"
