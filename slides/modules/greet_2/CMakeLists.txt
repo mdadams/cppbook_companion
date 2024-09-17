@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.28 FATAL_ERROR)
 project(greet_2 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)

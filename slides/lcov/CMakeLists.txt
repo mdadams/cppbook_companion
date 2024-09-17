@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 project(coverage_example LANGUAGES CXX C)
 option(ENABLE_COVERAGE "Enable coverage" false)
 set(CMAKE_VERBOSE_MAKEFILE true)
