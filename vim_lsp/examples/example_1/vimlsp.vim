@@ -28,8 +28,8 @@ function s:sde_lsp_cpp_setup()
 	nmap <buffer> [g :LspPreviousDiagnostic<cr>
 	nmap <buffer> ]g :LspNextDiagnostic<cr>
 	nmap <buffer> K :LspHover<cr>
-	"inoremap <buffer> <expr><c-f> lsp#scroll(+4)
-	"inoremap <buffer> <expr><c-d> lsp#scroll(-4)
+	nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
+	nnoremap <buffer> <expr><c-b> lsp#scroll(-4)
 
 	"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 	"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
